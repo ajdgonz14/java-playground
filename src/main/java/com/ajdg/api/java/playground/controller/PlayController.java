@@ -10,10 +10,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("v1/play")
-public class PlaygroundController {
+public class PlayController {
 
-    @GetMapping("")
+    @GetMapping("/run")
     public ResponseEntity<?> getAllUnit() {
-        return new ResponseEntity<>("Hooray", HttpStatus.OK);
+        return new ResponseEntity<>("Hooray!", HttpStatus.OK);
     }
 }
